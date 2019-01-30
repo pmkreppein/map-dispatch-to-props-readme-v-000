@@ -21,6 +21,14 @@ class App extends Component {
   }
 };
 
+const mapDispatchToProps = (dispatch) => {
+  return {
+    addItem: () => {
+      dispatch(addItem())
+    }
+  }
+}
+
 const mapStateToProps = (state) => {
   return {
     items: state.items
